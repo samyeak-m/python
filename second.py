@@ -87,3 +87,36 @@ print(matrix)
 print(matrix[1])
 print(matrix[0])
 print(matrix[1][2])
+
+city=['ktm','pkr','npj','dhr']
+dist=['ktm','kaski','banke','unknown']
+test=[city,dist]
+print(test[1][3])
+
+list1=['one','two','three','four']
+print(list1)
+print(list1[:])
+print(list1[1:])
+print(list1[:-2])
+print(len(list1))
+list1.append('messi')
+print(list1)
+
+list1.pop()
+print(list1)
+
+list1.sort()
+print(list1)
+
+list2=[1,5,3,8,0]
+list2.sort()
+print(list2)
+list2.reverse()
+print(list2)
+
+BARCELONA=['messi','Neymar','Suarez','Ter Stegen']
+print('messi'in BARCELONA)
+print('neymar'not in BARCELONA)
+print('Neymar'not in BARCELONA)
+print('Torres' not in BARCELONA)
+print('Argentina' in BARCELONA)
