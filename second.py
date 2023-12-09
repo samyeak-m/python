@@ -53,3 +53,37 @@ if vowel=="a" or vowel=="a" or vowel=="e" or vowel=="i" or vowel=="o" or vowel==
 else:
     print("the character",vowel,"is not a vowel")
 
+Mountain =['Sagarmatha','Annapurna','Manaslu','Dhaulagiri','Makalu']
+print(Mountain)
+print(type(Mountain))
+print(len(Mountain))
+
+print(Mountain[2:])
+print(Mountain[0:3])
+print(Mountain[-1])
+print(Mountain[-1:-3])
+print(Mountain[:])
+
+Mountain.append('Kanchanjunga')
+print(Mountain)
+
+Mountain.pop(2)
+print(Mountain)
+
+Mountain.sort()
+print(Mountain)
+
+Mountain.reverse()
+print(Mountain)
+
+Barcelona = ['Messi','Neymar','Suarez']
+print(Barcelona)
+# Barcelona.pop(1)
+PSG=['messi','neymar','mbappe']
+print(PSG)
+
+matrix=[Barcelona,PSG]
+print(matrix)
+print(matrix[1])
+print(matrix[0])
+print(matrix[1][2])
