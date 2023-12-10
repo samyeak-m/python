@@ -128,3 +128,23 @@ print(place[0])
 print(place.index('pyuthan'))
 print(place.count('nepalgunj'))
 # place.append('kathmandu')
+aayan=('sushant',"aayan","me")
+print(type(aayan))
+print(len(aayan))
+print(aayan[-1])
+print(aayan.count('me'))
+print(aayan.index('me'))
+
+for x in aayan:
+    print(x,end=" ")
+
+if "me" in aayan:
+    print('yes')
+else:
+    print('no')
+
+# while(0):
+#     if "me" in aayan:
+#         print('yes')
+#     else:
+#         print('no')
