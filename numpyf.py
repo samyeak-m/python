@@ -88,3 +88,103 @@ print("\nsum on axis 2 : ",result)
 result=np.cumsum([array1,array2])
 print("\ncumsum : adding and printing one array at a time : ",result)
 
+# data-type
+
+messi=np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+print("\ndata type : ",messi.dtype)
+
+neymar=np.array(['N','E','PEPAL','a','l'],dtype='S')
+print("\n",neymar)
+print(neymar.dtype)
+
+test=np.array([1,2,3,4,5],dtype='i4')
+print("\n",test)
+print('here is : ',test.dtype)
+
+# test=np.array(['a',1,2,3],dtype='i4')
+# print("\n",test)
+# # print("here again",test.dtype)
+
+test1=np.array([1.0,2.1,3.1])
+test2=test1.astype('i')
+print("\nfinal : ",test2)
+print(test2.dtype)
+
+test1=np.array([2,0,4,0,6])
+test2=test1.astype(bool)
+print("\nfinal : ",test2)
+print(test2.dtype)
+
+suarez=np.array([[1,2,3,4,5],[6,7,8,9,10]])
+print("\nnumber and size of array : ",suarez.shape)
+
+a=np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+print("\n",a)
+b=a.reshape(4,3)
+print("\nreshaping a to 2d (4,3) : \n",b)
+
+c=np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+d=c.reshape(2,3,2)
+print("\nreshaping c to 3d(2,3,2) : \n",d)
+
+# random
+
+from numpy import random as rd
+x=rd.randint(50)
+print("\n",x)
+
+y=rd.rand()
+print("\n",y)
+
+z=rd.randint(100,size=(5))
+print("\n",z)
+
+a=rd.randint(100,size=(3,5))
+print("\n",a)
+
+l=rd.randint(100,size=(2,3,5))
+print("\n",l)
+
+m=rd.rand(4)
+print("\n",m)
+
+o=rd.choice([4,5,6,23,56])
+print("\n",o)
+
+p=rd.choice([4,5,6,23,56],size=(2,3))
+print("\n",p)
+
+arr =rd.choice([4,5,6,23,56],p=[0.1,0.3,0.2,0.4,0.0],size=(100))
+print("\n",arr)
+
+# view and copy
+
+array1 = np.array([1,2,3,4,5])
+array2 = array1.copy()
+array2[0]=90
+print("\n",array1)
+print(array2)
+
+array1 = np.array(['a','b','c','d','e'])
+array2 = array1.copy()
+array2[0]='z'
+print("\n",array1)
+print(array2)
+
+array3 = array1.view()
+array1[0]='n'
+print("\n",array1)
+print(array3)
+
+e=np.array([1,2,3,4,5,6,7,8])
+print("\n",e.reshape(2,4).base)
+
+arr3=np.array([1,2,3,4,5,6,7,8])
+for x in arr3:
+    print(x)
+
+for x in np.nditer(arr3):
+    print('nditer',x)
+
+for idx,x in np.ndenumerate(arr3):
+    print(idx,x)
