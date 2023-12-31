@@ -188,3 +188,11 @@ for x in np.nditer(arr3):
 
 for idx,x in np.ndenumerate(arr3):
     print(idx,x)
+
+# join
+c=[[1,2,3],[7,8,9],[4,5,6]]
+print("\n",c)
+array1=np.array([[2,3],[5,6]])
+array2=np.array([[7,8],[10,11]])
+concat=np.concatenate((array1,array2),axis=1)
+print("\n",concat)
