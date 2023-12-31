@@ -47,7 +47,12 @@ import pandas as pd
 # df['Pulse'].fillna(mode_value,inplace=True)
 # print('\nfillna with mode\n',df.to_string())
 
+# df=pd.read_csv(r'data.csv',encoding='unicode_escape')
+# # print(df.to_string())
+# df['Date']=pd.to_datetime(df['Date'])
+# print('\ndate formating\n',df.to_string())
+
 df=pd.read_csv(r'data.csv',encoding='unicode_escape')
-# print(df.to_string())
-df['Date']=pd.to_datetime(df['Date'])
-print('\ndate formating\n',df.to_string())
+df.dropna(subset=['Date'],inplace=True)
+print('\nwith dropna\n',df.to_string())
+print(df.dtypes)
